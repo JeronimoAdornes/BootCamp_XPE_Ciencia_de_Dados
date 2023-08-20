@@ -1,0 +1,50 @@
+<html>
+    <script>
+        //Aprendendo a criar listas no JavaScript
+        var carros = ["GOL", "Palio", "Uno"];
+        console.log(carros);
+
+        var primeiroCarro = carros[0];
+        var segundoCarro = carros[1];
+        var terceiroCarro = carros[2];
+
+        console.log("primeira posição: " + primeiroCarro);
+        console.log("segunda posição: " + segundoCarro);
+        console.log("terceira posição: " + terceiroCarro);
+
+        //Alterando um item numerado da lista
+        carros[2] = "Argo"
+        console.log(carros[2]);
+
+        console.log("Tamanho do Array: " + carros.length);
+        console.log("Ultimo elemento do Array: " + carros[carros.length - 1]);
+    
+        //Inserindo um elemento numerado da Lista
+        carros[3] = "Sandero";
+        console.log("Ultimo elemento do Array: " + carros[carros.length - 1]);
+
+        //Inserindo um ultimo elemento com a FN LENGTH
+        carros[carros.length] = "Civic";
+        console.log("Ultimo elemento do Array: " + carros[carros.length - 1]);
+        
+        //Inserindo um elemento com a FN PUSH no final da lista
+        carros.push("Polo");
+        console.log(carros);
+
+        //Removendo o ultimo elemento da lista
+        console.log(carros.pop());
+        console.log(carros);
+
+        //Inserindo elementos no Inicio da lista com a FN UNSHIFT
+        carros.unshift("Jetta");
+        console.log(carros);
+
+        carros.unshift("Opala");
+        console.log(carros);
+
+        //Removendo o primeiro elemento da lista com FN SHIFT
+        console.log(carros.shift());
+        console.log(carros);
+
+   </script>
+</html>

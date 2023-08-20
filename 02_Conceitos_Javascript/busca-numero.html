@@ -1,0 +1,26 @@
+<html>
+    <script>
+        //Objetivo: Criar uma função para receber um número como
+        //parâmetro e verificar se esse número já existe em nossa
+        //lista (array), pré definida; veremos também o camando
+        //BREAK
+
+        //1-  Receber um número como parâmetro
+        //2- Executar um FOR na lista e para cada elemento verificar se é igual ao número buscado
+        //3- Quando encontrar, interromper a execução e retornar TRUE
+        //4- Se chegar até o fim sem encontrar, retornar FALSE
+
+        var lista = [19, 54, 18, 11, 47, 98, 36, 44, 87];
+        function verificaNumero(numero) {
+            var existe = false
+            for (var i = 0; i<lista.length; i++) {
+                if (lista[i] === numero) {
+                    existe = true;
+                    break;
+                    //o BREAK serve para interromper estruturas de repetição quando encontrar o valor;
+                }
+            }
+            return existe;
+        }
+    </script>
+</html>
